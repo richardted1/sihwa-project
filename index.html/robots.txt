@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://jusinst.netlify.app/sitemap.xml
