@@ -2020,7 +2020,8 @@ footer {
 section > *,
 header > *,
 footer > *,
-.u-sheet > * {
+.u-sheet > *,
+.u-section-row > * {
   position: relative;
 }
 base {
@@ -16846,10 +16847,10 @@ a.pswp__share--download:hover {
   --animation-slide_out_up-translate_y: -100%;
   --animation-slide_out_left-translate_x: -100%;
   --animation-slide_out_right-translate_x: 100%;
-  --animation-custom_in-translate_x: 50px;
+  --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-scale: 0.3;
-  --animation-custom_in-rotate: 180deg;
+  --animation-custom_in-scale: 1;
+  --animation-custom_in-rotate: 0deg;
   --animation-custom_in-opacity: 0;
 }
 @keyframes bounce {
@@ -36500,13 +36501,13 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 186px;
+  min-height: 184px;
 }
 
 .u-header .u-image-1 {
   width: 259px;
   height: 118px;
-  margin: 12px auto 0;
+  margin: 0 auto;
 }
 
 .u-header .u-logo-image-1 {
@@ -36514,15 +36515,9 @@ a.u-link.u-text-hover-grey-90:hover {
   height: 100%;
 }
 
-.u-header .u-search-1 {
-  width: 175px;
-  min-height: 38px;
-  margin: 9px 0 0 auto;
-}
-
 .u-header .u-menu-1 {
   font-family: size-14;
-  margin: -37px auto 12px;
+  margin: 11px auto 0;
 }
 
 .u-header .u-nav-1 {
@@ -36564,66 +36559,21 @@ a.u-link.u-text-hover-grey-90:hover {
   font-size: 1rem;
   background-image: none;
 }
-@media (max-width: 1199px) {
-  .u-header .u-image-1 {
-    width: 219px;
-    margin-left: 120px;
-  }
 
+.u-header .u-search-1 {
+  width: 175px;
+  min-height: 38px;
+  margin: -36px 0 19px auto;
+}
+@media (max-width: 1199px) {
   .u-header .u-search-1 {
     width: 175px;
     height: auto;
-    margin-right: 200px;
-  }
-
-  .u-header .u-menu-1 {
-    width: auto;
-    margin-right: 220px;
   }
 }
-@media (max-width: 991px) {
-  .u-header .u-image-1 {
-    margin-left: 340px;
-  }
 
-  .u-header .u-search-1 {
-    margin-right: auto;
-    margin-left: 462px;
-  }
 
-  .u-header .u-menu-1 {
-    margin-right: auto;
-    margin-left: 130px;
-  }
-}
-@media (max-width: 767px) {
-  .u-header .u-image-1 {
-    margin-right: 401px;
-    margin-left: auto;
-  }
 
-  .u-header .u-search-1 {
-    margin-left: 300px;
-  }
-
-  .u-header .u-menu-1 {
-    margin-left: 220px;
-  }
-}
-@media (max-width: 575px) {
-  .u-header .u-image-1 {
-    margin-right: 60px;
-  }
-
-  .u-header .u-search-1 {
-    margin-right: 70px;
-    margin-left: auto;
-  }
-
-  .u-header .u-menu-1 {
-    margin-left: 320px;
-  }
-}
  .u-footer {
   background-image: none;
 }
